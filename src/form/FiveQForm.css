@@ -1,0 +1,12 @@
+
+.fiveForm {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+.fl{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
