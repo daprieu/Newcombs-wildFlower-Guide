@@ -1,4 +1,5 @@
 import React, {useContext, useEffect} from 'react'
+import GN111 from '../forms/groupNumForms/GN111';
 import { LocatorKeyContext } from '../providers/LocatorKeyProvider';
 
 
@@ -7,12 +8,13 @@ interface Props {
     props?: any
 }
 
-const LocatorKey = (props: Props) => {
+export const LocatorKey = (props: Props) => {
+    console.log('props: ', props);
     const {key} = useContext(LocatorKeyContext)
     
-    console.log('key: ', key);
+    console.log('keylocatorKey: ', key);
         if (key === 111) {
-            console.log("It is a Sunny day")
+            return <GN111 />
         }
         if (key === 122){
 
@@ -258,7 +260,7 @@ const LocatorKey = (props: Props) => {
             console.log("vines")
         }
         else {
-            console.log("DNE")
+            return <div>DNE</div>
         }
             
     
